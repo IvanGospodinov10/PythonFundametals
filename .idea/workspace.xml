@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8b0533-0d3f-465a-9a84-918ef2d49a18" name="Changes" comment="Add test file to project PythonFundametals.iml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8e8b0533-0d3f-465a-9a84-918ef2d49a18" name="Changes" comment="Add comment.">
       <change beforePath="$PROJECT_DIR$/01_ConditonalStataement/file_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_ConditonalStataement/file_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +21,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -105,7 +107,31 @@
       <option name="project" value="LOCAL" />
       <updated>1755327028226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add pattern * print code">
+      <option name="closed" value="true" />
+      <created>1755358447536</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755358447536</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add comment.">
+      <option name="closed" value="true" />
+      <created>1755358882639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755358882639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add comment.">
+      <option name="closed" value="true" />
+      <created>1755358909399</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755358909399</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add test file to project PythonFundametals.iml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test file to project PythonFundametals.iml" />
+    <MESSAGE value="Add pattern * print code" />
+    <MESSAGE value="Add comment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comment." />
   </component>
 </project>
