@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e8b0533-0d3f-465a-9a84-918ef2d49a18" name="Changes" comment="Add 3 files with code">
-      <change afterPath="$PROJECT_DIR$/01_ConditonalStataement/03_even_numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01_ConditonalStataement/slice_notation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_ConditonalStataement/02_largest_of_three_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_ConditonalStataement/02_largest_of_three_numbers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_ConditonalStataement/03_word_reverse.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_ConditonalStataement/03_word_reverse.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +41,13 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.01_numbe_definer.executor": "Run",
     "Python.02_largest_of_three_numbers.executor": "Run",
-    "Python.03_word_reverse.executor": "Run",
+    "Python.03_word_reverse.executor": "Debug",
+    "Python.04_even_numbers.executor": "Run",
     "Python.ASCII_table_example (1).executor": "Run",
     "Python.ASCI_table_example.executor": "Run",
     "Python.file_1.executor": "Run",
+    "Python.slice_notation.executor": "Run",
+    "Python.work_file.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
@@ -52,29 +58,7 @@
       <recent name="C:\Users\ivan9\Python test Web\PythonFundametals\01_ConditonalStataement" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.04_even_numbers">
-    <configuration name="01_numbe_definer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonFundametals" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_ConditonalStataement" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_ConditonalStataement/01_numbe_definer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.slice_notation">
     <configuration name="02_largest_of_three_numbers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonFundametals" />
       <option name="ENV_FILES" value="" />
@@ -163,13 +147,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="slice_notation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonFundametals" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_ConditonalStataement" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\ivan9\Python test Web\PythonFundametals\01_ConditonalStataement\slice_notation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.slice_notation" />
+        <item itemvalue="Python.03_word_reverse" />
         <item itemvalue="Python.04_even_numbers" />
         <item itemvalue="Python.file_1" />
-        <item itemvalue="Python.03_word_reverse" />
         <item itemvalue="Python.02_largest_of_three_numbers" />
-        <item itemvalue="Python.01_numbe_definer" />
       </list>
     </recent_temporary>
   </component>
