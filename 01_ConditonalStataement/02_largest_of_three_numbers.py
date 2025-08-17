@@ -8,3 +8,7 @@ elif second_number > first_number and second_number > third_number:
     print(second_number)
 else:
     print(third_number)
+
+
+# num1, num2, num3 = int(input()), int(input()), int(input())
+# print(max(num1, num2, num3))
