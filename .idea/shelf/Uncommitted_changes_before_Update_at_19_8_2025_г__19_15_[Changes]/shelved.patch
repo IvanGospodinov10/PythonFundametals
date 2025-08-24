@@ -1,0 +1,30 @@
+diff --git a/01_ConditonalStataement/06_shopping.py b/01_ConditonalStatement/06_shopping.py
+rename from 01_ConditonalStataement/06_shopping.py
+rename to 01_ConditonalStatement/06_shopping.py
+diff --git a/01_ConditonalStataement/07_patterns.py b/01_ConditonalStatement/07_patterns.py
+rename from 01_ConditonalStataement/07_patterns.py
+rename to 01_ConditonalStatement/07_patterns.py
+diff --git a/01_ConditonalStataement/file_1.py b/01_ConditonalStatement/file_1.py
+rename from 01_ConditonalStataement/file_1.py
+rename to 01_ConditonalStatement/file_1.py
+diff --git a/01_ConditonalStataement/ASCII_table_example.py b/01_ConditonalStatement/ASCII_table_example.py
+rename from 01_ConditonalStataement/ASCII_table_example.py
+rename to 01_ConditonalStatement/ASCII_table_example.py
+diff --git a/01_ConditonalStataement/01_numbe_definer.py b/01_ConditonalStatement/01_numbe_definer.py
+rename from 01_ConditonalStataement/01_numbe_definer.py
+rename to 01_ConditonalStatement/01_numbe_definer.py
+diff --git a/01_ConditonalStataement/02_largest_of_three_numbers.py b/01_ConditonalStatement/02_largest_of_three_numbers.py
+rename from 01_ConditonalStataement/02_largest_of_three_numbers.py
+rename to 01_ConditonalStatement/02_largest_of_three_numbers.py
+diff --git a/01_ConditonalStataement/03_word_reverse.py b/01_ConditonalStatement/03_word_reverse.py
+rename from 01_ConditonalStataement/03_word_reverse.py
+rename to 01_ConditonalStatement/03_word_reverse.py
+diff --git a/01_ConditonalStataement/04_even_numbers.py b/01_ConditonalStatement/04_even_numbers.py
+rename from 01_ConditonalStataement/04_even_numbers.py
+rename to 01_ConditonalStatement/04_even_numbers.py
+diff --git a/01_ConditonalStataement/slice_notation.py b/01_ConditonalStatement/slice_notation.py
+rename from 01_ConditonalStataement/slice_notation.py
+rename to 01_ConditonalStatement/slice_notation.py
+diff --git a/01_ConditonalStataement/05_number_between_1_and_10.py b/01_ConditonalStatement/05_number_between_1_and_10.py
+rename from 01_ConditonalStataement/05_number_between_1_and_10.py
+rename to 01_ConditonalStatement/05_number_between_1_and_10.py
