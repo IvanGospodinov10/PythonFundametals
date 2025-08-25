@@ -1,0 +1,36 @@
+Index: 02_Conditional Statements, and Loops/09_sorting_hat.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02_Conditional Statements, and Loops/09_sorting_hat.py b/02_Conditional Statements, and Loops/09_sorting_hat.py
+new file mode 100644
+--- /dev/null	(date 1756144031982)
++++ b/02_Conditional Statements, and Loops/09_sorting_hat.py	(date 1756144031982)
+@@ -0,0 +1,26 @@
++name = input()
++is_voldemort = False
++
++while name != 'Welcome!':
++    name_length = len(name)
++
++    if name == 'Voldemort':
++        print(f"You must not speak of that name!")
++        is_voldemort = True
++        break
++
++    if name_length < 5:
++        house = f"{name} goes to Gryffindor."
++    elif name_length == 5:
++        house = f"{name} goes to Slytherin."
++    elif name_length == 6:
++        house = f"{name} goes to Ravenclaw."
++    else:
++        house = f"{name} goes to Hufflepuff."
++
++    print(house)
++
++    name = input()
++
++if not is_voldemort:
++    print(f"Welcome to Hogwarts.")
