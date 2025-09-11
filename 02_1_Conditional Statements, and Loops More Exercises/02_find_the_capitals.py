@@ -7,7 +7,7 @@ for text in word:
 
 for index, char in enumerate(list_word):
     if char.isupper():
-        print(f"{index}", end='')
+        print(f"{index},", end='')
 
 
 # word = "SofUnI"
