@@ -1,15 +1,11 @@
-number_of_string = int(input())
+number_of_strings = int(input())
 
 is_true = True
 
-for current_words in range(number_of_string):
-    word = input()
-    for index, char in enumerate(word):
-        if char == ',' or char == '.' or char == '_':
-            is_true = False
-            print(f"{word}, is not pure!")
-            break
-
-    if is_true:
-        print(f"{word}, is pure.")
+for current_strings in range(number_of_strings):
+    current_string = input()
+    if ',' in current_string or '.' in current_string or '_' in current_string:
+        print(f"{current_string} is not pure!")
+    else:
+        print(f"{current_string} is pure.")
 
