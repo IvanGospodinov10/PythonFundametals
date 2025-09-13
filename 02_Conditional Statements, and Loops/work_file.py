@@ -4,7 +4,8 @@ num_list = []
 for digits in str(num):
     num_list.append(int(digits))
 
-num_list.sort(reverse=True)
+# num_list.sort(reverse=True)
+num_list.sort()
 num = int(''.join(map(str,num_list)))
 
 print(num)
