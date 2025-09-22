@@ -1,13 +1,17 @@
 word = input()
 
 list_word = []
+new_list = []
 
 for text in word:
     list_word.append(text)
 
 for index, char in enumerate(list_word):
     if char.isupper():
-        print(f"{index},", end='')
+        new_list.append(index)
+
+print(new_list)
+
 
 
 # word = "SofUnI"
