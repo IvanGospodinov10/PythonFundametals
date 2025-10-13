@@ -1,0 +1,345 @@
+Index: 03.02_Daa_Types_and_Variables_Exercises/03_elevator.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/03_elevator.py b/03.02_Daa_Types_and_Variables_Exercises/03_elevator.py
+new file mode 100644
+--- /dev/null	(date 1758536205850)
++++ b/03.02_Daa_Types_and_Variables_Exercises/03_elevator.py	(date 1758536205850)
+@@ -0,0 +1,5 @@
++from math import ceil
++number_of_people = int(input())
++elevator_capacity = int(input())
++
++print(ceil(number_of_people / elevator_capacity))
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/04_sum_of_chars.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/04_sum_of_chars.py b/03.02_Daa_Types_and_Variables_Exercises/04_sum_of_chars.py
+new file mode 100644
+--- /dev/null	(date 1758536205871)
++++ b/03.02_Daa_Types_and_Variables_Exercises/04_sum_of_chars.py	(date 1758536205871)
+@@ -0,0 +1,7 @@
++characters = int(input())
++
++total_sum = 0
++for num in range(1, characters + 1):
++    char = input()
++    total_sum += ord(char)
++print(f"The sum equals: {total_sum}")
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/05_print_part_of_ the_ASCII_table.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/05_print_part_of_ the_ASCII_table.py b/03.02_Daa_Types_and_Variables_Exercises/05_print_part_of_ the_ASCII_table.py
+new file mode 100644
+--- /dev/null	(date 1758536205879)
++++ b/03.02_Daa_Types_and_Variables_Exercises/05_print_part_of_ the_ASCII_table.py	(date 1758536205879)
+@@ -0,0 +1,8 @@
++start_number = int(input())
++finish_number = int(input())
++
++for character in range(start_number, finish_number + 1):
++    if character != finish_number:
++        print(f"{chr(character)}",end=' ')
++    else:
++        print(f"{chr(character)}",end='')
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/06_triples_of_latin_letters.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/06_triples_of_latin_letters.py b/03.02_Daa_Types_and_Variables_Exercises/06_triples_of_latin_letters.py
+new file mode 100644
+--- /dev/null	(date 1758536205902)
++++ b/03.02_Daa_Types_and_Variables_Exercises/06_triples_of_latin_letters.py	(date 1758536205902)
+@@ -0,0 +1,7 @@
++number_of_symbols = int(input())
++
++for first_symbol in range(97, 97 + number_of_symbols):
++    for second_symbol in range(97, 97 + number_of_symbols):
++        for third_symbol in range(97, 97 + number_of_symbols):
++            symbol_mutation = f"{chr(first_symbol)}{chr(second_symbol)}{chr(third_symbol)}"
++            print(f"{symbol_mutation}")
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/07_water_overflow.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/07_water_overflow.py b/03.02_Daa_Types_and_Variables_Exercises/07_water_overflow.py
+new file mode 100644
+--- /dev/null	(date 1758536205912)
++++ b/03.02_Daa_Types_and_Variables_Exercises/07_water_overflow.py	(date 1758536205912)
+@@ -0,0 +1,11 @@
++number_of_lines = int(input())
++
++water_total = 0
++for number in range(1, number_of_lines + 1):
++    liters_of_water = int(input())
++
++    if liters_of_water + water_total > 255:
++        print(f"Insufficient capacity!")
++        continue
++    water_total += liters_of_water
++print(f"{water_total}")
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/08_party_profit.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/08_party_profit.py b/03.02_Daa_Types_and_Variables_Exercises/08_party_profit.py
+new file mode 100644
+--- /dev/null	(date 1758536205935)
++++ b/03.02_Daa_Types_and_Variables_Exercises/08_party_profit.py	(date 1758536205935)
+@@ -0,0 +1,25 @@
++group_size = int(input())
++days = int(input())
++
++coins = 0
++
++for num_of_days in range(1, days + 1):
++
++    if num_of_days % 10 == 0:
++        group_size -= 2
++    if num_of_days % 15 == 0:
++        group_size += 5
++
++    if num_of_days % 3 == 0:
++        coins -= group_size * 3
++    if num_of_days % 5 == 0:
++        coins += group_size * 20
++        if num_of_days % 3 == 0:
++            coins -= group_size * 2
++
++
++    coins += 50
++    coins -= group_size * 2
++
++coins_per_companion = coins // group_size
++print(f"{group_size} companions received {coins_per_companion} coins each.")
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/09_snowballs.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/09_snowballs.py b/03.02_Daa_Types_and_Variables_Exercises/09_snowballs.py
+new file mode 100644
+--- /dev/null	(date 1758536205944)
++++ b/03.02_Daa_Types_and_Variables_Exercises/09_snowballs.py	(date 1758536205944)
+@@ -0,0 +1,23 @@
++number_of_snowballs = int(input())
++
++max_weight = 0
++max_time = 0
++max_quality = 0
++max_value = 0
++
++for snowball in range (1, number_of_snowballs + 1):
++
++    weight_of_the_snowball = int(input())
++    time_needed = int(input())
++    quality = int(input())
++
++    current_value = (weight_of_the_snowball // time_needed) ** quality
++
++    if current_value > max_value:
++        max_value = current_value
++        max_weight = weight_of_the_snowball
++        max_time = time_needed
++        max_quality = quality
++
++print(f"{max_weight} : {max_time} = {max_value} ({max_quality})")
++
+Index: 02_Conditional Statements, and Loops/12_christmas_spirit.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/02_Conditional Statements, and Loops/12_christmas_spirit.py b/02_Conditional Statements, and Loops/12_christmas_spirit.py
+new file mode 100644
+--- /dev/null	(date 1758536205965)
++++ b/02_Conditional Statements, and Loops/12_christmas_spirit.py	(date 1758536205965)
+@@ -0,0 +1,14 @@
++quantity_of_decorations = int(input())
++days_left_until_christmas = int(input())
++
++ornament_set = 2
++tree_skirt = 5
++tree_garland = 3
++tree_lights = 15
++
++ornament_point = 5
++skirt_point = 3
++garland_point = 10
++lights_point = 17
++
++christmas_spirit = 0
+\ No newline at end of file
+Index: 03_03_Data Types and Variables - More Exercises/02_prime_number_checker.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03_03_Data Types and Variables - More Exercises/02_prime_number_checker.py b/03_03_Data Types and Variables - More Exercises/02_prime_number_checker.py
+new file mode 100644
+--- /dev/null	(date 1758536205974)
++++ b/03_03_Data Types and Variables - More Exercises/02_prime_number_checker.py	(date 1758536205974)
+@@ -0,0 +1,12 @@
++number = int(input())
++
++if number <= 1:
++    print("False")
++else:
++    is_prime = True
++    for num in range(2, int(number ** 0.5) + 1):
++
++        if number % num == 0:
++            is_prime = False
++            break
++    print(f"True" if is_prime else "False")
+\ No newline at end of file
+Index: 03_03_Data Types and Variables - More Exercises/03_decrypting_messages.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03_03_Data Types and Variables - More Exercises/03_decrypting_messages.py b/03_03_Data Types and Variables - More Exercises/03_decrypting_messages.py
+new file mode 100644
+--- /dev/null	(date 1758536205997)
++++ b/03_03_Data Types and Variables - More Exercises/03_decrypting_messages.py	(date 1758536205997)
+@@ -0,0 +1,11 @@
++key = int(input())
++lines = int(input())
++
++message = ''
++
++for character in range(lines):
++    char = input()
++    decrypting_char = chr(ord(char) + key)
++    message += decrypting_char
++
++print(message)
+\ No newline at end of file
+Index: 03.02_Daa_Types_and_Variables_Exercises/10_gladiator_expenses.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.02_Daa_Types_and_Variables_Exercises/10_gladiator_expenses.py b/03.02_Daa_Types_and_Variables_Exercises/10_gladiator_expenses.py
+new file mode 100644
+--- /dev/null	(date 1758536206028)
++++ b/03.02_Daa_Types_and_Variables_Exercises/10_gladiator_expenses.py	(date 1758536206028)
+@@ -0,0 +1,21 @@
++lost_fights = int(input())
++
++helmet_price = float(input())
++sword_price = float(input())
++shield_price = float(input())
++armor_price = float(input())
++
++# expenses = 0
++
++total_helmet_price = lost_fights // 2
++total_sword_price = lost_fights // 3
++total_shield_price = lost_fights // (2 * 3)
++total_armor_price = total_shield_price // 2
++
++expenses = ((total_helmet_price * helmet_price)
++            + (total_sword_price * sword_price)
++            + (total_shield_price * shield_price)
++            + (total_armor_price * armor_price))
++
++
++print(f"Gladiator expenses: {expenses:.2f} aureus")
+\ No newline at end of file
+Index: 03.01_Data_Types_and_Variables_Lab/03_pounds_to_dollars.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.01_Data_Types_and_Variables_Lab/03_pounds_to_dollars.py b/03.01_Data_Types_and_Variables_Lab/03_pounds_to_dollars.py
+new file mode 100644
+--- /dev/null	(date 1758536206037)
++++ b/03.01_Data_Types_and_Variables_Lab/03_pounds_to_dollars.py	(date 1758536206037)
+@@ -0,0 +1,5 @@
++british_pounds = int(input())
++exchanger_rate = 1.31 #pound to dollars
++
++dollars = british_pounds * exchanger_rate
++print(f"{dollars:.3f}")
+\ No newline at end of file
+Index: 03.01_Data_Types_and_Variables_Lab/04_centuries_to_minutes.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.01_Data_Types_and_Variables_Lab/04_centuries_to_minutes.py b/03.01_Data_Types_and_Variables_Lab/04_centuries_to_minutes.py
+new file mode 100644
+--- /dev/null	(date 1758536206059)
++++ b/03.01_Data_Types_and_Variables_Lab/04_centuries_to_minutes.py	(date 1758536206059)
+@@ -0,0 +1,11 @@
++THE_TOPICAL_YEAR = 365.2422
++
++centuries = int(input())
++# Assume that one year has 365.2422 days on average
++
++years = centuries * 100
++days = int(years * THE_TOPICAL_YEAR)
++hours = days * 24
++minutes = hours * 60
++
++print(f"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes")
+\ No newline at end of file
+Index: 03.01_Data_Types_and_Variables_Lab/05_special_numbers.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.01_Data_Types_and_Variables_Lab/05_special_numbers.py b/03.01_Data_Types_and_Variables_Lab/05_special_numbers.py
+new file mode 100644
+--- /dev/null	(date 1758536206082)
++++ b/03.01_Data_Types_and_Variables_Lab/05_special_numbers.py	(date 1758536206082)
+@@ -0,0 +1,14 @@
++number = int(input())
++# special_number = 0
++
++for num_range in range(1, number +1):
++    special_number = 0
++
++    for digits in str(num_range):
++        special_number += int(digits)
++
++
++    if special_number == 5 or special_number == 7 or special_number == 11:
++        print(f"{num_range} -> True")
++    else:
++        print(f"{num_range} -> False")
+Index: 03.01_Data_Types_and_Variables_Lab/06_next_happy_year.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/03.01_Data_Types_and_Variables_Lab/06_next_happy_year.py b/03.01_Data_Types_and_Variables_Lab/06_next_happy_year.py
+new file mode 100644
+--- /dev/null	(date 1758536206106)
++++ b/03.01_Data_Types_and_Variables_Lab/06_next_happy_year.py	(date 1758536206106)
+@@ -0,0 +1,8 @@
++current_year = int(input())
++
++while True:
++    current_year += 1
++
++    if len(set(str(current_year))) == len(str(current_year)):
++        break
++print((current_year))
+\ No newline at end of file
