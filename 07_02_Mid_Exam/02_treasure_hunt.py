@@ -37,6 +37,7 @@ while command_gain[0] != "Yohoho!":
     elif action == "Steal":
         count = int(command_gain[1])
         treasure_chest = steal(treasure_chest, count)
+
     command_gain = input().split()
 if not treasure_chest:
     print("Failed treasure hunt.")
