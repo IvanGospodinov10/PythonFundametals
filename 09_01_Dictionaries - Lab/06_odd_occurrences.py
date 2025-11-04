@@ -11,4 +11,8 @@ for word in words:
     else:
         word_occurrences[key_word] += 1
 
-print(" ".join([word for word, value in word_occurrences.items() if value %2 != 0]))
+# print(" ".join([word for word, value in word_occurrences.items() if value %2 != 0]))
+
+for key, value in word_occurrences.items():
+    if value % 2 != 0:
+        print(key, end=" ")
