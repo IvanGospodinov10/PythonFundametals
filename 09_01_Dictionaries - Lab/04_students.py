@@ -14,6 +14,7 @@ while ":" in command:
 course = " ".join(command.split("_"))
 for key,value in student_dict.items():
     if key == course:
+
         for student_id, student_name in value.items():
             print(f"{student_name} - {student_id}")
 
